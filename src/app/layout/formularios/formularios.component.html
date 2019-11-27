@@ -1,0 +1,8 @@
+<p>formularios works!</p>
+<form [formGroup]="myForm" >
+  <input type="text" formControlName="employeeName"/>
+    <span *ngIf="hasError('employeeName')">*</span>
+  <input formControlName="dni"/>
+  <button (click)="enviar()">Enviar!!</button>
+
+</form>
